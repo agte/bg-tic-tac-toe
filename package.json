@@ -1,11 +1,9 @@
 {
   "name": "@agte/bg-tic-tac-toe",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Logic part of the game \"Tic-tac-toe\"",
   "type": "module",
-  "exports": {
-    ".": "./src/Game.js"
-  },
+  "main": "./src/Game.js",
   "directories": {
     "lib": "src",
     "test": "test"
