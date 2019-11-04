@@ -1,6 +1,6 @@
 {
   "name": "@agte/bg-tic-tac-toe",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Logic part of the game \"Tic-tac-toe\"",
   "type": "module",
   "main": "./src/Game.js",
@@ -32,8 +32,8 @@
   },
   "homepage": "https://github.com/agte/bg-tic-tac-toe#readme",
   "dependencies": {
-    "@agte/bg-engine": "git+https://github.com/agte/bg-engine.git#0.0.8",
-    "@agte/type": "git+https://github.com/agte/type.git#0.0.3"
+    "@agte/bg-engine": "git+https://github.com/agte/bg-engine.git#0.0.9",
+    "@agte/type": "git+https://github.com/agte/type.git#1.0.0"
   },
   "devDependencies": {
     "ava": "^2.4.0",

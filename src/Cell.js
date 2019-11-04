@@ -1,4 +1,4 @@
-import type from '@agte/type';
+import { assert } from '@agte/type';
 import { Item } from '@agte/bg-engine';
 
 export default class Cell extends Item {
@@ -9,7 +9,7 @@ export default class Cell extends Item {
   }
 
   set mark(value) {
-    type.string(value);
+    assert.string(value);
     this.#mark = value;
   }
 

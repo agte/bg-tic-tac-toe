@@ -1,4 +1,4 @@
-import type from '@agte/type';
+import { assert } from '@agte/type';
 import { Game as BasicGame, Items } from '@agte/bg-engine';
 import Cell from './Cell.js';
 
@@ -44,7 +44,7 @@ export default class Game extends BasicGame {
   }
 
   mark(player, { id }, diff) {
-    type.nonEmptyString(id);
+    assert.nonEmptyString(id);
     const cell = this.cells.get(id);
     if (!cell) {
       throw new Error('Wrong cell');
