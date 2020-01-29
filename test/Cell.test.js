@@ -1,5 +1,10 @@
-import test from 'ava';
-import Cell from '../src/Cell.js';
+const test = require('ava');
+
+let Cell;
+
+test.before(async (t) => {
+  Cell = (await import('../lib/Cell.js')).default;
+});
 
 test('constructor: no args', (t) => {
   t.throws(() => new Cell());

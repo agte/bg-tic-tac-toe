@@ -1,5 +1,10 @@
-import test from 'ava';
-import Game from '../src/Game.js';
+const test = require('ava');
+
+let Game;
+
+test.before(async (t) => {
+  Game = (await import('../lib/Game.js')).default;
+});
 
 test('constructor: default args', (t) => {
   const game = new Game();

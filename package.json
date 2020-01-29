@@ -1,17 +1,17 @@
 {
   "name": "@agte/bg-tic-tac-toe",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Logic part of the game \"Tic-tac-toe\"",
   "type": "module",
   "main": "./src/Game.js",
   "directories": {
-    "lib": "src",
+    "src": "src",
     "test": "test"
   },
   "scripts": {
     "lint": "eslint .",
     "format": "eslint --fix .",
-    "test": "ava"
+    "test": "ava test/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -32,16 +32,15 @@
   },
   "homepage": "https://github.com/agte/bg-tic-tac-toe#readme",
   "dependencies": {
-    "@agte/bg-engine": "git+https://github.com/agte/bg-engine.git#0.0.9",
-    "@agte/type": "git+https://github.com/agte/type.git#1.0.0"
+    "@agte/bg-engine": "git+https://github.com/agte/bg-engine.git#2.0.0",
+    "@agte/type": "git+https://github.com/agte/type.git#2.0.0"
   },
   "devDependencies": {
     "ava": "^2.4.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.5.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "esm": "^3.2.25"
+    "eslint-plugin-import": "^2.18.2"
   },
   "engines": {
     "node": ">=12.4.0"
@@ -70,20 +69,6 @@
     }
   },
   "ava": {
-    "require": [
-      "esm"
-    ],
-    "testOptions": {
-      "presets": [
-        [
-          "module:ava/stage-4",
-          {
-            "modules": false
-          }
-        ]
-      ]
-    },
-    "babel": false,
-    "compileEnhancements": false
+    "babel": false
   }
 }
