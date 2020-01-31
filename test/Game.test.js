@@ -119,3 +119,12 @@ test('diff: finish move', (t) => {
   t.deepEqual(diff.view('x'), expectedView);
   t.deepEqual(diff.view('o'), expectedView);
 });
+
+test('state', (t) => {
+  const game = new Game();
+  const state = game.state;
+  const view = state.view('x');
+  t.truthy(view.players);
+  t.truthy(view.cells);
+  t.is(view.finished, false);
+});
