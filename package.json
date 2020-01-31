@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "description": "Logic part of the game \"Tic-tac-toe\"",
   "type": "module",
-  "main": "./src/Game.js",
+  "main": "./lib/Game.js",
   "directories": {
-    "src": "src",
+    "lib": "lib",
     "test": "test"
   },
   "scripts": {
