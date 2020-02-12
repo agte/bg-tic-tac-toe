@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "cells": {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9,
+      "items": {
+        "type": "string",
+        "enum": ["x", "o", ""]
+      }
+    },
+    "currentPlayer": {
+      "type": "string",
+      "enum": ["x", "o"]
+    },
+    "finished": {
+      "type": "boolean"
+    },
+    "winner": {
+      "type": "string",
+      "enum": ["x", "o", ""]
+    }
+  },
+  "required": [
+    "cells",
+    "currentPlayer",
+    "finished",
+    "winner"
+  ],
+  "additionalProperties": false
+}
