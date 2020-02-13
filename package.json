@@ -1,6 +1,6 @@
 {
   "name": "@agte/bg-tic-tac-toe",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Logic part of the game \"Tic-tac-toe\"",
   "type": "module",
   "main": "./lib/Game.js",
